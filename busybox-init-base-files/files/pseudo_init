@@ -384,7 +384,7 @@ set_parts_by_name_hardcode() {
 /bin/mount -t proc /proc /proc
 /bin/mount -t tmpfs tmpfs /tmp
 /bin/mount -t sysfs sys /sys
-/bin/mount -t devtmpfs none /dev
+# /bin/mount -t devtmpfs none /dev
 fgrep -sq pstore /proc/filesystems && {
 	/bin/mount -t pstore pstore /sys/fs/pstore
 }
